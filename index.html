@@ -6,5 +6,72 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="header">
+      <h1 id="title">Keffri's Art Survey</h1>
+      <p id="description">How do you self-teach?</p>
+    </div>
+    <form id="survey-form" action="">
+      <div class="input-div">
+        <p class="input-title" for="name">Name</p>
+        <label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name."
+          name="name"
+          value=""
+          required
+        />
+        </label>
+      </div>
+      <div class="input-div">
+        <p class="input-title" for="email">Email</p>
+        <label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email."
+          name="email"
+          value=""
+          required
+        />
+        </label>
+      </div>
+      <div class="input-div">
+        <p class="input-title" for="number"
+          >Age<small> (optional)</small></p
+        >
+      </label>
+        <input
+          id="number"
+          type="number"
+          placeholder="Enter your age."
+          name="number"
+          value=""
+        />
+    </label>
+      </div>
+      <div class="input-div">
+        <p class="input-title" for="dropdown"
+          >Which best describes your current experience level?</p>
+      <label>
+        <select id="dropdown" name="dropdown">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+          <option value="expert">Expert</option>
+          <option value="kim-jung-gi">Kim Jung Gi</option>
+        </select>
+    </label>
+      </div>
+      <div class="input-div">
+        <label class="input-title" for="vouch">
+          Would you recommend the self-taught route?
+        </label>
+        <input class="vouch" type="radio" name="vouch">Yes
+    </label>
+      </div>
+    </form>
+  </body>
 </html>
