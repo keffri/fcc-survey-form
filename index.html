@@ -11,52 +11,53 @@
       <h1 id="title">Keffri's Art Survey</h1>
       <p id="description">How do you self-teach?</p>
     </div>
-    <form id="survey-form" action="">
+    <form id="survey-form" action="#">
       <div class="input-div">
-        <p class="input-title" for="name">Name</p>
-        <label>
-        <input
-          id="name"
-          type="text"
-          placeholder="Enter your name."
-          name="name"
-          value=""
-          required
-        />
+        <label id="name-label" class="input-title" for="name"
+          >Name
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name."
+            name="name"
+            value=""
+            required
+          />
         </label>
       </div>
       <div class="input-div">
-        <p class="input-title" for="email">Email</p>
-        <label>
-        <input
-          id="email"
-          type="email"
-          placeholder="Enter your email."
-          name="email"
-          value=""
-          required
-        />
+        <label id="email-label" class="input-title" for="email">
+          Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email."
+            name="email"
+            value=""
+            required
+          />
         </label>
       </div>
       <div class="input-div">
-        <p class="input-title" for="number"
-          >Age<small> (optional)</small></p
-        >
-      </label>
-        <input
-          id="number"
-          type="number"
-          placeholder="Enter your age."
-          name="number"
-          value=""
-        />
-    </label>
+        <label id="number-label" class="input-title" for="number"
+          >Age<small> (optional)</small>
+          <input
+            id="number"
+            type="number"
+            placeholder="Enter your age."
+            name="number"
+            value=""
+            min="13"
+            max="100"
+          />
+        </label>
       </div>
       <div class="input-div">
-        <p class="input-title" for="dropdown"
-          >Which best describes your current experience level?
-        </p>
+        <label class="input-title" for="dropdown">
+          Which best describes your current experience level?
+        </label>
         <select id="dropdown" name="dropdown">
+          <option value="">[Please select an option.]</option>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
@@ -65,53 +66,155 @@
         </select>
       </div>
       <div class="input-div">
-        <p class="input-title" for="vouch">
+        <p class="input-title">
           Would you recommend self-teacher over tradtional schooling?
         </p>
         <div class="radio-buttons">
-        <input id="SA" class="vouch" type="radio" name="vouch"><label for="SA"> Strongly Agree</label>
-        <br>
-        <input id="A" class="vouch" type="radio" name="vouch"><label for="A"> Agree</label>
-        <br>
-        <input id="N" class="vouch" type="radio" name="vouch"><label for="N"> Neutral</label>
-        <br>
-        <input id="D" class="vouch" type="radio" name="vouch"><label for="D"> Disagree</label>
-        <br>
-        <input id="SD" class="vouch" type="radio" name="vouch"><label for="SD"> Strongly Disagree</label>
-        </div>    
+          <label for="SA">
+            <input
+              id="SA"
+              class="vouch"
+              type="radio"
+              name="vouch"
+              value="strongly-agree"
+            />Strongly Agree</label
+          >
+          <br />
+          <label for="A"
+            ><input
+              id="A"
+              class="vouch"
+              type="radio"
+              name="vouch"
+              value="agree"
+            />
+            Agree</label
+          >
+          <br />
+          <label for="N"
+            ><input
+              id="N"
+              class="vouch"
+              type="radio"
+              name="vouch"
+              value="neutral"
+            />
+            Neutral</label
+          >
+          <br />
+          <label for="D"
+            ><input
+              id="D"
+              class="vouch"
+              type="radio"
+              name="vouch"
+              value="disagree"
+            />
+            Disagree</label
+          >
+          <br />
+          <label for="SD"
+            ><input
+              id="SD"
+              class="vouch"
+              type="radio"
+              name="vouch"
+              value="strongly-disagree"
+            />
+            Strongly Disagree</label
+          >
+        </div>
       </div>
       <div class="input-div">
-          <p class="input-title">What is your preffered method of learning?</p>
+        <label class="input-title" for="method"
+          >What is your preffered method of learning?
           <select id="method" name="method">
-              <option value="books">Books</option>
-              <option value="videos">Videos</option>
-              <option value="online-courses">Online Course</option>
+            <option value="">[Please select an option.]</option>
+            <option value="books">Books</option>
+            <option value="videos">Videos</option>
+            <option value="online-courses">Online Course</option>
           </select>
+        </label>
       </div>
       <div class="input-div">
-          <p class="input-title">What medium are you trying to learn?<small> (check all that apply)</small></p>
-          <div class="checkboxes">
-          <input type="checkbox" id="graphite" class="medium" name="graphite"><label for="graphite">Graphite</label>
-          <br>
-          <input type="checkbox" id="charcoal" class="medium" name="charcoal"><label for="charcoal">Charcoal</label>
-          <br>
-          <input type="checkbox" id="pastel" class="medium" name="pastel"><label for="pastel">Pastel</label>
-          <br>
-          <input type="checkbox" id="oil-paints" class="medium" name="oil-paints"><label for="oil-paint">Oil Paints</label>
-          <br>
-          <input type="checkbox" id="acrylic-paints" class="medium" name="acrylic-paints"><label for="acrylic-paints">Acrylic Paints</label>
-          <br>
-          <input type="checkbox" id="watercolor" class="medium" name="watercolor"><label for="watercolor">Watercolor</label>
-          </div>
+        <p class="input-title">
+          What medium are you trying to learn?<small>
+            (check all that apply)</small
+          >
+        </p>
+        <div class="checkboxes">
+          <label for="graphite"
+            ><input
+              type="checkbox"
+              id="graphite"
+              class="medium"
+              name="medium"
+              value="graphite"
+            />Graphite</label
+          >
+          <br />
+          <label for="charcoal"
+            ><input
+              type="checkbox"
+              id="charcoal"
+              class="medium"
+              name="medium"
+              value="charcoal"
+            />Charcoal</label
+          >
+          <br />
+          <label for="pastel"
+            ><input
+              type="checkbox"
+              id="pastel"
+              class="medium"
+              name="medium"
+              value="pastel"
+            />Pastel</label
+          >
+          <br />
+          <label for="oil-paints"
+            ><input
+              type="checkbox"
+              id="oil-paints"
+              class="medium"
+              name="medium"
+              value="oil-paints"
+            />Oil Paints</label
+          >
+          <br />
+          <label for="acrylic-paints"
+            ><input
+              type="checkbox"
+              id="acrylic-paints"
+              class="medium"
+              name="medium"
+              value="acrylic-paints"
+            />Acrylic Paints</label
+          >
+          <br />
+          <label for="watercolor"
+            ><input
+              type="checkbox"
+              id="watercolor"
+              class="medium"
+              name="medium"
+              value="watercolor"
+            />Watercolor</label
+          >
+        </div>
       </div>
       <div class="input-div">
-          <label class="input-title" for="comments">Comments?</label>
-          <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+        <label class="input-title" for="comments">Comments?</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Enter your comments here..."
+        ></textarea>
       </div>
       <div class="submit-button">
-          <input type="submit" value="Submit" id="submit">
+        <button id="submit" value="Submit" form="survey-form">SUBMIT</button>
       </div>
     </form>
   </body>
 </html>
- 
