@@ -15,6 +15,10 @@ label {
   font-size: 20px;
 }
 
+::placeholder {
+  color: #000;
+}
+
 #header {
   text-align: center;
   margin: auto;
@@ -33,12 +37,14 @@ label {
   background-color: #ffffff80;
   max-width: 30%;
   min-width: 400px;
-  height: 800px;
+  height: 90%;
   margin: auto;
   border: 5px;
+  border-radius: 4px;
 }
 
 .input-div {
+  padding-top: 15px;
   margin: auto;
   width: 100%;
   text-align: center;
@@ -54,6 +60,7 @@ label {
 }
 
 #name {
+  background-color: white;
   border: 2px solid black;
   display: block;
   margin: auto;
@@ -64,6 +71,7 @@ label {
 }
 
 #email {
+  background-color: white;
   border: 2px solid black;
   display: block;
   margin: auto;
@@ -74,6 +82,7 @@ label {
 }
 
 #number {
+  background-color: white;
   border: 2px solid black;
   display: block;
   margin: auto;
@@ -94,7 +103,92 @@ label {
   height: 37px;
 }
 
-.vouch {
-  display: inline-block;
+.radio-buttons {
+  display: block;
+  width: 90%;
+  margin: auto;
   text-align: left;
+}
+
+.vouch {
+  margin-top: 10px;
+  text-align: left;
+}
+
+#SA {
+}
+#A {
+}
+#N {
+}
+#D {
+}
+#SD {
+}
+
+#method {
+  background-color: white;
+  border: 2px solid black;
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 91.5%;
+  height: 37px;
+}
+
+.checkboxes {
+  display: block;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+
+.medium {
+  margin-top: 10px;
+  text-align: left;
+}
+
+#graphite {
+}
+#charcoal {
+}
+#pastel {
+}
+#oil-paints {
+}
+#acrylic-paints {
+}
+#watercolor {
+}
+
+#comments {
+  display: block;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+  width: 90%;
+  height: 125px;
+}
+.submit-button {
+  margin: auto;
+  text-align: center;
+}
+
+#submit {
+  border: 2px solid #000;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 30px auto;
+  width: 75%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+#submit:hover {
+  border-color: #fff;
+  background-color: #000;
+  color: #fff;
 }

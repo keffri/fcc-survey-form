@@ -54,8 +54,8 @@
       </div>
       <div class="input-div">
         <p class="input-title" for="dropdown"
-          >Which best describes your current experience level?</p>
-      <label>
+          >Which best describes your current experience level?
+        </p>
         <select id="dropdown" name="dropdown">
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
@@ -63,15 +63,55 @@
           <option value="expert">Expert</option>
           <option value="kim-jung-gi">Kim Jung Gi</option>
         </select>
-    </label>
       </div>
       <div class="input-div">
-        <label class="input-title" for="vouch">
-          Would you recommend the self-taught route?
-        </label>
-        <input class="vouch" type="radio" name="vouch">Yes
-    </label>
+        <p class="input-title" for="vouch">
+          Would you recommend self-teacher over tradtional schooling?
+        </p>
+        <div class="radio-buttons">
+        <input id="SA" class="vouch" type="radio" name="vouch"><label for="SA"> Strongly Agree</label>
+        <br>
+        <input id="A" class="vouch" type="radio" name="vouch"><label for="A"> Agree</label>
+        <br>
+        <input id="N" class="vouch" type="radio" name="vouch"><label for="N"> Neutral</label>
+        <br>
+        <input id="D" class="vouch" type="radio" name="vouch"><label for="D"> Disagree</label>
+        <br>
+        <input id="SD" class="vouch" type="radio" name="vouch"><label for="SD"> Strongly Disagree</label>
+        </div>    
+      </div>
+      <div class="input-div">
+          <p class="input-title">What is your preffered method of learning?</p>
+          <select id="method" name="method">
+              <option value="books">Books</option>
+              <option value="videos">Videos</option>
+              <option value="online-courses">Online Course</option>
+          </select>
+      </div>
+      <div class="input-div">
+          <p class="input-title">What medium are you trying to learn?<small> (check all that apply)</small></p>
+          <div class="checkboxes">
+          <input type="checkbox" id="graphite" class="medium" name="graphite"><label for="graphite">Graphite</label>
+          <br>
+          <input type="checkbox" id="charcoal" class="medium" name="charcoal"><label for="charcoal">Charcoal</label>
+          <br>
+          <input type="checkbox" id="pastel" class="medium" name="pastel"><label for="pastel">Pastel</label>
+          <br>
+          <input type="checkbox" id="oil-paints" class="medium" name="oil-paints"><label for="oil-paint">Oil Paints</label>
+          <br>
+          <input type="checkbox" id="acrylic-paints" class="medium" name="acrylic-paints"><label for="acrylic-paints">Acrylic Paints</label>
+          <br>
+          <input type="checkbox" id="watercolor" class="medium" name="watercolor"><label for="watercolor">Watercolor</label>
+          </div>
+      </div>
+      <div class="input-div">
+          <label class="input-title" for="comments">Comments?</label>
+          <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+      </div>
+      <div class="submit-button">
+          <input type="submit" value="Submit" id="submit">
       </div>
     </form>
   </body>
 </html>
+ 
